@@ -1,66 +1,11 @@
-# Outsourced Selling
-Metal Workers is the website of [outsourcedsales.com](https://outsourcedsales.com)
+# Metal Workers
+Metal Workers is the website of [metal-workers.com](https://metal-workers.com)
 
+Metal Workers, established in 1963, is a leading expert in metal fabrications, specializing in stainless steel balustrades, aluminum, brass, and mild steel. With in-house capabilities including tube rolling, sheet forming, and machining, they ensure precision and excellence in every project. Serving the film and construction industries, they have supplied balustrades to renowned global retailers and multinational corporate headquarters.
 
-### Built With
+Metal Workers stands out for its commitment to in-house capabilities, controlling the entire production process with cutting-edge facilities. Their client-centric approach involves collaborating closely with clients to transform unique designs into tangible realities. They offer services for film sets, bespoke and custom metalwork, and architectural metalwork expertise. Their product range includes custom-built food spraying machines and various metalwork projects.
 
-Major frameworks/libraries used to bootstrap project.
+The website showcases their expertise in architectural metalwork, balustrades, metal fabrication, gates, fences, staircases, steel frames, and outdoor garden products. Clients can explore and purchase items like Corten planters and trough planters from the product page. The blog highlights the craftsmanship of Metal Workers in balustrades, staircases, and architectural metalwork.
 
-* [Hugo](https://gohugo.io)
-* [Tailwind.css](https://tailwindcss.com)
-* [Glightbox.js](https://github.com/biati-digital/glightbox/blob/master/README.md)
-
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-You will first need to install the tools used to build the project namely
-* Hugo - the static site generator
-* NPM - the tool used to manage node module dependencies
-
-### Prerequisites
-
-To install Hugo and NPM, on a mac you can use brew
-* npm
-  ```sh
-  brew install node
-  ```
-* Hugo 
-  ```sh
-  brew install hugo
-  ```
-
-**Clone Repository and open in VSCode**  
-`git clone git@github.com:imobilize/outsourcedsales`
-
-##### Install with NPM 
-`npm install`
-##### Install with Yarn
-`yarn`
-
-**To start developing:**
-##### Develop with NPM 
-`npm run start`
-##### Develop with Yarn
-`yarn start`
-
-**To generate the site HTML:**
-##### Build with NPM 
-`npm run build`
-##### Build with Yarn
-`yarn build`
-
-**npm run start** will run two commands parallel:  
-`npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch`
-
-Has paginated Categories and Tags. Markdown files will automatically convert images put into `/assets` folder to .webp images. 
-
-## Image shortcodes for webp as well.
-{{< imgh src="img-name.jpg" alt="Place alt text here." >}}
-
-## Credits
-4044ever - Original Theme
-https://github.com/4044ever/Hugo-Tailwind-3.0.git
+The site encourages visitors to contact them for custom metal fabrication solutions, emphasizing their dedication to bringing metal fabrication dreams to life. The "Book a call" button invites inquiries about how their products can meet specific needs.
 
