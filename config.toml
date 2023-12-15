@@ -1,5 +1,5 @@
 baseURL = ""
-title = "Metal Workers"
+title = "Sell your house fast uk"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
@@ -24,16 +24,17 @@ home = ["HTML", "AMP", "RSS", "JSON"]
     services = "/:title"
 
 [params]
-author = "Metal Workers"
+author = "Sell your house fast uk"
 authorimage = "../assets/images/global/author.webp"
 github = ""
 facebook = ""
-og_image = "/images/metal-workings.jpg"
-sitename = "Metal Workers"
+og_image = ""
+sitename = "Sell your house fast uk"
 twitter = ""
-description = "Metal Workers excels in crafting top-tier metal fabrications, specializing in stainless steel balustrades, aluminum, brass, and mild steel."
+description = "
+Sell Your House Fast UK offers a streamlined and hassle-free solution for homeowners looking to sell their properties quickly. With a straightforward process, including a free cash offer, testimonials from satisfied clients, and a comparison chart highlighting the benefits over traditional estate agents, the company emphasizes speed, guaranteed sales, and lower fees. The service caters to various situations, from financial difficulties to relocations, promising market knowledge and a quick sale at no cost to the seller. For a straightforward and efficient property sale, Sell Your House Fast UK provides a direct and reliable solution"
 logo = ""
-keywords = "metal fabrication, custom metalwork, metalwork services, steel fabrication, metal welding, architectural metalwork, metal craftsmen, metal fabrication company, stainless steel fabrication, precision metalwork, metal welding services, structural steel fabrication, ornamental ironwork, metalwork design, metal fabrication experts, metal fabrication solutions, bespoke metalwork, metalwork projects, industrial metalwork, commercial metalwork, residential metalwork, metalwork artisans, metalwork craftsmanship, modern metalwork, sustainable metalwork, eco-friendly metalwork, metal restoration, metalwork innovations, metal design, metal engineering, metal craftsmanship, metalwork artistry, metalwork quality, metalwork excellence, metalwork specialists, metalwork legacy"
+keywords = "sell house fast, quick property sale, cash offer for house, hassle-free home sale, guaranteed property sale, no fees home selling, fast home sale process, property cash buyers, efficient home selling, direct property buyers, testimonial home sales, compare estate agents, quick sale benefits, inherited property sale, divorce property sale, relocation home buyers, financial difficulty property sale, home selling guide, stop house repossession, quick house sale tips, sell house in a week, property market knowledge, stress-free home sale, no-cost property selling, sell house testimonials, efficient home sale service, property sale comparison, home selling solutions, blog on house selling, prevent house repossession, quick house sale how-to guide, home sale contact, property valuation, house sale articles, metalwork-inspired property, modern design home sale, eco-friendly property sale, metalwork craftsmanship home sale, bespoke property solutions, metal-inspired home design, metalwork engineering property, sustainable property sale, metal restoration-inspired home sale"
 home = "Home"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
