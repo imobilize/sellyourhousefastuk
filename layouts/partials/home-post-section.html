@@ -1,36 +1,35 @@
 <section class="md:py-[120px] py-20">
     <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 items-end gap-6">
-            <div class="">
-                <h2 class="font-semibold mt-4 text-4xl leading-snug lg:text-5xl lg:leading-[62px]">Latest news from our
+            <div class="flex">
+                <h2 class="font-semibold mt-4 text-4xl font-bebas-neue text-secondary leading-snug lg:text-5xl lg:leading-[62px]">ARTICLES FROM OUR BLOG
+
                     blog</h2>
             </div>
-            <div class="text-2xl md:text-end">
+            <!-- <div class="text-2xl md:text-end">
                 <a href="/blog" class="text-primary hover:text-amber-500">View all posts</a>
-            </div>
+            </div> -->
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
-            {{ range ( first 2 ( where .Paginator.Pages "Type" "blog" ) ) }}
-
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-0 md:mt-12">
+            {{ range (first 2 (where .Paginator.Pages "Type" "blog")) }}
+        
             <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
-                {{ $featured := .Params.featuredImage }}
-                {{ with .Resources.GetMatch $featured }}
-                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                <img src="{{ $postimage }}" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="">
-                {{ end }}
                 <div class="p-8 flex-1">
-                    <p class="font-medium text-sm text-dark-semilight tracking-[0.86px] uppercase">{{.Date.Format
-                        "2006-01-02"}}</p>
-                    <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-green duration-300"><a
+                    <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-primary duration-300 font-bebas-neue tracking-wider text-dark"><a
                             href="{{.RelPermalink}}">{{.Title}}</a></h4>
-                    <p class="mt-4 font-light leading-7 text-lg">{{ .Params.description }}</p>
-                    <a href="{{.RelPermalink}}"
-                        class="text-primary hover:text-amber-500 mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read
-                        more</a>
+                    {{ $featured := .Params.featuredImage }}
+                    {{ with .Resources.GetMatch $featured }}
+                    {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+                    <img src="{{ $postimage }}" class="h-auto md:object-cover rounded-2xl" alt="">
+                    {{ end }}
+                    <p class="mt-4 font-medium text-sm text-dark tracking-[0.86px] font-bebas-neue uppercase">{{.Date.Format "02 January 2006"}}</p>
+                    <p class="mt-4 font-light leading-7 text-lg font-sans">{{ .Params.description }}</p>
+                    <a href="{{.RelPermalink}}" class="text-primary mt-4 inline-block uppercase font-medium tracking-[0.86px] hover:underline">Read more</a>
                 </div>
             </div>
-
+        
             {{ end }}
         </div>
+        
     </div>
 </section>
