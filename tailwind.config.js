@@ -39,7 +39,7 @@ module.exports = {
         '5xl': '3rem',       // 5 Extra Large
         '6xl': '4rem',       // 6 Extra Large
         'display-1' : '11rem',
-        'display-2' : '7.5rem'
+        'display-2' : '7.5rem',
       },
     },
   },
