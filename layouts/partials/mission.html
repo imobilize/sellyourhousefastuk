@@ -1,79 +1,112 @@
 <div class="relative bg-neutral">
 
-  <div class="container mx-auto my-auto">
+  <div class="container mx-auto my-auto max-h-svh">
 
     <div class="flex justify-center">
-      <h2 class="text-5xl text-white font-bebas-neue font-medium mt-20"> HOW DOES IT WORK</h2>
+      <h2 class="text-4xl md:text-6xl text-white font-bebas-neue font-medium mt-20 mb-12"> HOW DOES IT WORK</h2>
     </div>
-    <div class="flex  justify-center items-center min-h-screen">
+    <div class="flex  justify-center items-center max-h-svh">
 
-      <div class="flex flex-col md:flex-row space-x-0 space-y-3 md:space-y-0 md:space-x-20">
+      <div class="flex flex-col lg:flex-row space-x-0 space-y-3 lg:space-y-0 md:space-x-20 lg:space-x-20">
         <!-- Circle 1 -->
         <div class="flex flex-col items-center">
-          <div class="w-96 h-96 bg-secondary rounded-full flex flex-col items-center justify-center mb-4 z-1">
+          <div class="w-80 h-80 bg-secondary rounded-full flex flex-col items-center justify-center mb-4 z-40">
             <div class="flex">
-              {{ with resources.Get "images/fill_in_form.png" }}
-              {{ $small := (.Resize "400x webp q100").RelPermalink }}
-              {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-              {{ $large := (.Resize "2000x webp q50").RelPermalink }}
-              {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-              <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
-              {{- with $medium -}}, {{.}} 1024w{{- end -}}
-              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-20 mr-5">
-              {{end}}
-              <h4 class="font-bebas-neue text-3xl text-white">FILL IN
+              <div class="relative right-16 bottom-6">
+                {{ with resources.Get "images/fill_in_form.png" }}
+                {{ $small := (.Resize "400x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+                {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+                <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+                {{- with $medium -}}, {{.}} 1024w{{- end -}}
+                {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-32">
+                {{end}}
+              </div>
+              <h4 class="font-bebas-neue text-3xl md:text-4xl  text-white relative right-12">FILL IN <br>
                 THE FORM</h4>
             </div>
             <div class="text-center z-10">
-              <p class="font-sans text-lg p-4 tracking-tight font-bold text-dark">
+              <p class="font-sans text-lg p-4 tracking-tight font-semibold text-dark">
                 The form is quick and easy. Provide some simple details about your property so that we can make an
                 assessment.</p>
             </div>
           </div>
-        </div>
-
-        <!-- Circle 2 -->
-        <div class="flex flex-col items-center">
-          <div class="w-96 h-96 bg-primary rounded-full flex flex-col items-center justify-center mb-4 z-1">
-            <div class="flex">
-              {{ with resources.Get "images/agree_price.png" }}
+          <div class="">
+            <div class="relative bottom-32 left-44 z-10  hidden lg:block">
+              {{ with resources.Get "images/arrow-2.png" }}
               {{ $small := (.Resize "400x webp q100").RelPermalink }}
               {{ $medium := (.Resize "550x webp q100").RelPermalink }}
               {{ $large := (.Resize "2000x webp q50").RelPermalink }}
               {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
               <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
               {{- with $medium -}}, {{.}} 1024w{{- end -}}
-              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-20">
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-12 w-auto">
               {{end}}
-              <h4 class="font-bebas-neue text-3xl text-white">AGREE
+            </div>
+          </div>
+         
+        </div>
+
+        <!-- Circle 2 -->
+        <div class="flex flex-col items-center">
+          <div class="w-80 h-80 bg-primary rounded-full flex flex-col items-center justify-center mb-4 z-40">
+            <div class="flex relative">
+              <div class="relative right-16 bottom-6">
+                {{ with resources.Get "images/agree_price.png" }}
+              {{ $small := (.Resize "400x webp q100").RelPermalink }}
+              {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+              {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+              {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+              <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+              {{- with $medium -}}, {{.}} 1024w{{- end -}}
+              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-28">
+              {{end}}
+              </div>
+              <h4 class="font-bebas-neue text-3xl md:text-4xl text-white relative top-5 right-12">AGREE <br>
                 THE PRICE</h4>
             </div>
-            <div class="text-center z-10">
-              <p class="font-sans text-lg p-4 tracking-tight font-bold text-dark">You will be contacted by one of our
+            <div class="text-center z-10 relative">
+              <p class="font-sans text-lg p-4 tracking-tight text-dark">You will be contacted by one of our
                 specialists. They will ask for more information to see how best we can provide a service. We will try to
                 agree a fair price for both parties with no fees for you to pay.</p>
+                
             </div>
+          </div>
+          <div class="relative bottom-32 left-44 z-10 hidden lg:block">
+            {{ with resources.Get "images/arrow-2.png" }}
+            {{ $small := (.Resize "400x webp q100").RelPermalink }}
+            {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+            {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+            {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+            <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+            {{- with $medium -}}, {{.}} 1024w{{- end -}}
+            {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-12 w-auto">
+            {{end}}
           </div>
         </div>
 
         <!-- Circle 3 -->
         <div class="flex flex-col items-center relative">
-          <div class="w-96 h-96 bg-secondary rounded-full flex flex-col items-center justify-center mb-4 z-1">
+          <div class="w-80 h-80 bg-secondary rounded-full flex flex-col items-center justify-center mb-4 z-1">
             <div class="flex">
-              {{ with resources.Get "images/get_cash.png" }}
-              {{ $small := (.Resize "400x webp q100").RelPermalink }}
-              {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-              {{ $large := (.Resize "2000x webp q50").RelPermalink }}
-              {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
-              <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
-              {{- with $medium -}}, {{.}} 1024w{{- end -}}
-              {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-20 mr-5">
-              {{end}}
-              <h4 class="font-bebas-neue text-3xl text-white">GET
+              <div class="relative right-16 bottom-6">
+                {{ with resources.Get "images/get_cash.png" }}
+                {{ $small := (.Resize "400x webp q100").RelPermalink }}
+                {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                {{ $large := (.Resize "2000x webp q50").RelPermalink }}
+                {{ $logoimage := (.Resize "900x webp q100").RelPermalink }}
+                <img src="{{ $logoimage }}" srcset="{{- with $small -}}, {{.}} 768w{{- end -}}
+                {{- with $medium -}}, {{.}} 1024w{{- end -}}
+                {{- with $large -}}, {{.}} 1374w{{- end -}}" alt="" class="h-28">
+                {{end}}
+              </div>
+              
+              <h4 class="font-bebas-neue text-3xl md:text-4xl text-white relative right-12 bottom-0 leading-tight">GET <br>
                 THE CASH</h4>
             </div>
             <div class="text-center z-10">
-              <p class="font-sans text-lg p-4 tracking-tight font-bold text-dark">You will receive the money for your
+              <p class="font-sans text-lg p-4 tracking-tight font-semibold text-dark">You will receive the money for your
                 property very quickly. Typical time periods for settlement are within a week.
               </p>
             </div>
@@ -88,9 +121,9 @@
 </div>
 
 <div class="relative bg-white">
-  <div class="container mx-auto my-auto">
+  <div class="container mx-auto">
 
-    <div class="flex justify-center">
+    <div class="justify-center">
       <h2 class="text-6xl text-primary font-bebas-neue font-medium mt-20 mb-12">WHAT OUR CLIENTS ARE SAYING
       </h2>
     </div>
@@ -186,8 +219,8 @@
       </h3>
     </div>
     <div class="flex justify-center items-center">
-      <div class="w-full">
-        <div class="aspect-video mb-20">
+      <div class="w-full md:w-3/5 lg:w-3/5">
+        <div class="aspect-video mb-1">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/5id4Z5BxgVc?si=KEgvsiE-I8y9TxNK"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -196,10 +229,8 @@
       </div>
 
     </div>
-    <div class="mb-20">
       {{ partial "cta.html" . }}
 
-    </div>
-
+<div class="pb-20"> <br></div>
   </div>
 </div>
